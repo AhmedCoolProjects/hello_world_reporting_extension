@@ -12,13 +12,13 @@ class HelloWorldReportingExtension(IMultiprocessPlugin):
     def __init__(self, p):
         IMultiprocessPlugin.__init__(self, p)
 
-        # TODO: create a simple function that gonna do the same thing, no need to explicitly use loadConfig
-        self.config = loadConfig(ReportingConfig, relative(
-            __file__, './config.yaml'))
+        data = p.recv()
+        self.config = data['config']
+        message = data['message']
 
         __db__.register_extension(self.config)
 
-        print("--> Hello World Reporting Extension Loaded")
+        print(f'{message}')
 
     def run(self):
 
