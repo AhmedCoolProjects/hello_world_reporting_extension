@@ -5,14 +5,11 @@ version: 1.0.0
 authors: Ahmed Bargady <https://github.com/AhmedCoolProjects>
 license: BSD
 
+requirements: requirements.txt
 
-repository: 
-
-requirements: requirements.txt 
-  
 channels:
   subscribe: [helloWorldInferenceExtensionChannel]
 
 log:
   dir: ./logs
-  level: DEBUG 
+  level: DEBUG
