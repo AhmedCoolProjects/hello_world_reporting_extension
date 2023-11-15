@@ -1,2 +1,2 @@
-sonic-engine @ git+https://github.com/sooualil/sonic_engine_yapsy.git@d73ad0e602775020d50500afa110116aed3ffb5c
+# sonic-engine @ git+https://github.com/sooualil/sonic_engine_yapsy.git@d73ad0e602775020d50500afa110116aed3ffb5c
 Yapsy==1.12.2
